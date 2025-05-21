@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groww clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahid-Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="first-patti">
-<div class="logo-patti">
-    <div class="main-logo"></div>
-</div>
-
-<div class="explore">
-    <a href="" class="a1" style="color: rgb(22, 255, 22);">Explore</a>
-    <a href="" class="a2">Investment</a>
-</div>
-
-<div class="main-dibba"> 
- <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div> 
- <input placeholder="What are you looking for today? Talib sir" class="input-main">
-</div>
-
-<div class="icons">
-   <a href="#"> <i class="fa-regular fa-bell"></i></a>
-    <a href=""><i class="fa-solid fa-wallet"></i></a>
-    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-
-    
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Shahid's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, im <span class="purple"> Shahid </span>
+          <div>and im a Passionate</div>
+          <span id="element" class="purple"></span>
+        </div>
+        <div class="rightsection">
+          <img src="shahid pic.png" alt="" class="shadow" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="text-grey">What I have done so far</span>
+        <h1>Work Expireince</h1>
+        <div class="box">
+          
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Graphic Designer", "Photoshop Artist", "Video Editor", ],
+        typeSpeed: 20,
+      });
+    </script>
+  </body>
 </html>

@@ -1,57 +1,104 @@
-*{margin: 0%;
-border: 0%;
-border-color: transparent;
-font-family: Arial;
-}
-.first-patti{background-color: rgb(255, 255, 255);
-height: 83px; display: flex;
-align-items: center;
-justify-content:space-evenly ;
-}
-.logo-patti{height: 79px;
-width: 150px;
-display: flex;
-align-items: center;}
-.main-logo{background-image: url(Groww_app_logo.png);
-height: 40px;width: 148px;
-background-size:cover ;}
 
-.explore{display: flex;
-align-items:center; font-size: 20px;
-font-weight: 400px;}  
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-a{color: rgb(0, 0, 0);
-text-decoration: none;}
+    body {
+      background-color: rgb(0, 0, 37);
+      color: white;
+      font-family: "poppins", sans-serif;
+    }
 
-.a1{margin-right: 13px;
-margin-left: 13px;}
-.a2{margin-right: 13px;
-margin-left: 13px;} 
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background-color: rgb(25, 5, 53);
+    }
 
- .main-dibba{height: 82px;
-width: 488px;
-display: flex;
-align-items: center;
-justify-content: center;}
-.icon{margin-right: 1rem;}
+    nav ul {
+      display: flex;
+      justify-content: center;
+     margin-left: 80px;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 20px;
+     
+    }
 
-.input-main{font-size: 16px;
-    font-stretch: 100%;
-    height: 41px;
-width: 410px;
-border-radius: 3px;
-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.063);
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      color: rgb(172, 172, 248);
+      font-size: 1.01rem;
+    }
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 40px 80px;
+    }
 
-i{color: rgb(0, 0, 0); font-size: 1.5rem;
-}
-.icons{height: 78px;
-width: 221px;
+    .left {
+      font-size: 1.5rem;
+    }
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 120px 0px;
+    }
+    .firstsection > div  {
+      width: 40%;
+    }
+    .leftsection {
+      font-size: 3rem;
+    }
 
-display: flex;
-align-items: center;
-justify-content: space-evenly;}
-.himanshu{float: left;
-}
-img{height: 300px;
-border: 40px black;}
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .rightsection img {
+      width: 80%;
+      animation: slideFadeIn 1s ease-out forwards, float 4s ease-in-out infinite;
+    }
+
+    .rightsection img {
+      width: 80%;
+    }
+
+    .shadow {
+      transition: filter 0.1s ease 0.1s;
+    }
+
+    .shadow:hover {
+      filter: drop-shadow(15px 1px 19px rgba(55, 62, 255, 0.453));
+    }
+
+    .purple {
+      color: rgb(91, 3, 173);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      height: 80vh;
+      margin: auto;
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+      
+    }
+    .text-grey{ color: rgb(138, 138, 138);}
